@@ -104,6 +104,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String[] whereArgs = {"username" + position};//修改条件的参数
         db.update("user", cv, whereClause, whereArgs);//执行修改
         db.close();
+
+//        String sql = "update [user] set password = 'iHatePopMusic' where username='" + "username" + position + "'";//修改的SQL语句
+//        db.execSQL(sql);//执行修改
     }
 
     private void clear() {
